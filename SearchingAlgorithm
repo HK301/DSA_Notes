@@ -1,0 +1,26 @@
+Searching: In CS, searching is the process of finding an item with specified prperties from a collection of items.
+
+Searching:
+1.Unordered Linear Search:
+def unorderedlinearSearch(arr,value):
+    for i in range(len(arr)):
+        if arr[i] == value:
+            return i
+    return -1
+arr = [534,246,933,127,277,321,454,565,2220]
+value = 277
+print(unorderedlinearSearch(arr,value))
+
+
+2.Sorted/Ordered Linear Search:
+def orderedlinearSearch(arr,value):
+    for i in range(len(arr)):
+        if arr[i] == value:
+            return i
+        elif arr[i] > value:
+            return -1
+    return -1
+#orderedArray
+arr = [34,46,93,127,277,321,454,565,1220]
+value = 565
+print(orderedlinearSearch(arr,value))
